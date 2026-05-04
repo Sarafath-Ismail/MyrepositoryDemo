@@ -1,61 +1,153 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="3" total="4" passed="0" failed="0" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-04-12T21:53:55 AST" name="Default suite" finished-at="2026-04-12T21:54:05 AST" duration-ms="10091">
+  <suite started-at="2026-04-19T21:07:44 AST" name="Grouping" finished-at="2026-04-19T21:07:44 AST" duration-ms="21">
     <groups>
+      <group name="regression">
+        <method signature="LoginTest.VerifytheUserValidCredentials()[pri:1, instance:demoProject.LoginTest@18078bef]" name="VerifytheUserValidCredentials" class="demoProject.LoginTest"/>
+      </group> <!-- regression -->
     </groups>
-    <test started-at="2026-04-12T21:53:55 AST" name="Default test" finished-at="2026-04-12T21:54:05 AST" duration-ms="10091">
-      <class name="demoProject.Login">
-        <test-method is-config="true" signature="browserInitialization()[pri:0, instance:demoProject.Login@8f4ea7c]" started-at="2026-04-12T21:53:55 AST" name="browserInitialization" finished-at="2026-04-12T21:53:57 AST" duration-ms="2407" status="PASS">
+    <test started-at="2026-04-19T21:07:44 AST" name="Test" finished-at="2026-04-19T21:07:44 AST" duration-ms="21">
+      <class name="demoProject.LoginTest">
+        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:demoProject.LoginTest@18078bef]" started-at="2026-04-19T21:07:44 AST" name="browserInitialization" finished-at="1970-01-01T04:00:00 AST" duration-ms="-1776622064681" status="FAIL">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'browser' is required by BeforeMethod on method browserInitialization but has not been marked @Optional or defined
+in /Users/sharafath/git/MyrepositoryDemo/DemoProject/Grouping.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'browser' is required by BeforeMethod on method browserInitialization but has not been marked @Optional or defined
+in /Users/sharafath/git/MyrepositoryDemo/DemoProject/Grouping.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:264)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
+at org.testng.internal.Parameters.createParameters(Parameters.java:690)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:601)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserInitialization -->
-        <test-method signature="User1()[pri:1, instance:demoProject.Login@8f4ea7c]" started-at="2026-04-12T21:53:57 AST" name="User1" finished-at="2026-04-12T21:53:57 AST" duration-ms="251" status="PASS">
+        <test-method signature="VerifytheUserValidCredentials()[pri:1, instance:demoProject.LoginTest@18078bef]" started-at="2026-04-19T21:07:44 AST" name="VerifytheUserValidCredentials" finished-at="2026-04-19T21:07:44 AST" duration-ms="0" status="SKIP">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'browser' is required by BeforeMethod on method browserInitialization but has not been marked @Optional or defined
+in /Users/sharafath/git/MyrepositoryDemo/DemoProject/Grouping.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'browser' is required by BeforeMethod on method browserInitialization but has not been marked @Optional or defined
+in /Users/sharafath/git/MyrepositoryDemo/DemoProject/Grouping.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:264)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
+at org.testng.internal.Parameters.createParameters(Parameters.java:690)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:601)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- User1 -->
-        <test-method is-config="true" signature="browserQuitAndClose()[pri:0, instance:demoProject.Login@8f4ea7c]" started-at="2026-04-12T21:53:57 AST" name="browserQuitAndClose" finished-at="2026-04-12T21:53:58 AST" duration-ms="81" status="PASS">
+        </test-method> <!-- VerifytheUserValidCredentials -->
+        <test-method is-config="true" signature="browserQuitAndClose()[pri:0, instance:demoProject.LoginTest@18078bef]" started-at="2026-04-19T21:07:44 AST" name="browserQuitAndClose" finished-at="2026-04-19T21:07:44 AST" duration-ms="4" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.quit()" because "this.driver" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.quit()" because "this.driver" is null
+at demoProject.Base.browserQuitAndClose(Base.java:35)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
+at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:805)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:623)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserQuitAndClose -->
-        <test-method is-config="true" signature="browserInitialization()[pri:0, instance:demoProject.Login@8f4ea7c]" started-at="2026-04-12T21:53:58 AST" name="browserInitialization" finished-at="2026-04-12T21:54:00 AST" duration-ms="2164" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browserInitialization -->
-        <test-method signature="User2()[pri:2, instance:demoProject.Login@8f4ea7c]" started-at="2026-04-12T21:54:00 AST" name="User2" finished-at="2026-04-12T21:54:00 AST" duration-ms="297" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- User2 -->
-        <test-method is-config="true" signature="browserQuitAndClose()[pri:0, instance:demoProject.Login@8f4ea7c]" started-at="2026-04-12T21:54:00 AST" name="browserQuitAndClose" finished-at="2026-04-12T21:54:00 AST" duration-ms="79" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browserQuitAndClose -->
-        <test-method is-config="true" signature="browserInitialization()[pri:0, instance:demoProject.Login@8f4ea7c]" started-at="2026-04-12T21:54:00 AST" name="browserInitialization" finished-at="2026-04-12T21:54:02 AST" duration-ms="1931" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browserInitialization -->
-        <test-method signature="User3()[pri:3, instance:demoProject.Login@8f4ea7c]" started-at="2026-04-12T21:54:02 AST" name="User3" finished-at="2026-04-12T21:54:02 AST" duration-ms="288" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- User3 -->
-        <test-method is-config="true" signature="browserQuitAndClose()[pri:0, instance:demoProject.Login@8f4ea7c]" started-at="2026-04-12T21:54:02 AST" name="browserQuitAndClose" finished-at="2026-04-12T21:54:02 AST" duration-ms="79" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browserQuitAndClose -->
-        <test-method is-config="true" signature="browserInitialization()[pri:0, instance:demoProject.Login@8f4ea7c]" started-at="2026-04-12T21:54:02 AST" name="browserInitialization" finished-at="2026-04-12T21:54:05 AST" duration-ms="2121" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browserInitialization -->
-        <test-method signature="User4()[pri:4, instance:demoProject.Login@8f4ea7c]" started-at="2026-04-12T21:54:05 AST" name="User4" finished-at="2026-04-12T21:54:05 AST" duration-ms="299" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- User4 -->
-        <test-method is-config="true" signature="browserQuitAndClose()[pri:0, instance:demoProject.Login@8f4ea7c]" started-at="2026-04-12T21:54:05 AST" name="browserQuitAndClose" finished-at="2026-04-12T21:54:05 AST" duration-ms="79" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browserQuitAndClose -->
-      </class> <!-- demoProject.Login -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- demoProject.LoginTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Grouping -->
 </testng-results>

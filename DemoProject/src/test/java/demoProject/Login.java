@@ -1,5 +1,6 @@
 package demoProject;
 
+import org.testng.annotations.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
@@ -9,7 +10,7 @@ public class Login extends Base{
 	@Test (priority=1)
 	public void User1() {
 		
-		driver.navigate().to("https://groceryapp.uniqassosiates.com/admin/login");
+		/*driver.navigate().to("https://groceryapp.uniqassosiates.com/admin/login");
 		WebElement UserName=driver.findElement(By.xpath("//input[@name='username']"));
 		UserName.sendKeys("Customer1");
 	
@@ -57,5 +58,6 @@ public class Login extends Base{
 		
 		WebElement SignIn4=driver.findElement(By.xpath("//button[@class='btn btn-dark btn-block']"));
 		SignIn4.click(); 
-	}
+
+	*/}
 }
